@@ -1,0 +1,147 @@
+% LaTeX resume using res.cls
+\documentclass[line,margin]{res} 
+\usepackage{hyperref}
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+
+\setlength{\oddsidemargin}{-.5in}
+\setlength{\evensidemargin}{-.5in}
+\setlength{\textwidth}{6.0in}
+%\setlength{\itemsep}{0in}
+%\setlength{\parsep}{0in}
+
+%\setlength{\topmargin}{-0.6in}  % Start text higher on the page
+%\setlength{\textheight}{9.8in}  % increase textheight to fit more on a page
+%\setlength{\headsep}{0.2in}     % space between header and text
+%\setlength{\headheight}{12pt}   % make room for header
+
+\usepackage{fancyhdr}  % use fancyhdr package to get 2-line header
+\renewcommand{\headrulewidth}{0pt} % suppress line drawn by default by fancyhdr
+\rfoot{Tian Cao  (\thepage/ 2)\\ \hspace*{-\sectionwidth}\emph{tiancao@cs.unc.edu} }  % put page number at right
+\cfoot{}  % the footer is empty
+\pagestyle{fancy} % set pagestyle for the document
+
+\newenvironment{list1}{
+  \begin{list}{\ding{113}}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0.17in}}}{\end{list}}
+\newenvironment{list2}{
+  \begin{list}{$\bullet$}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0.2in}}}{\end{list}}
+      
+{\def\section*#1{}\bibliography{ref}}
+%\nocite{*}
+
+\begin{document}
+
+\name{\huge{Tian Cao} \vspace*{.1in}}
+% \address used twice to have two lines of address
+%\address{1985  Storm Lane, Troy, NY 12180}
+%\address{(518) 273-0014 or (518) 272-6666}
+
+\begin{resume}
+\section{\sc{Contact Information}}
+\vspace{.05in}
+\begin{tabular}{@{}p{3in}p{3in}}
+Department of Computer Science & {\it Phone:}  (919)-699-9542 \\            
+Sitterson Hall, UNC-Chapel Hill & {\it E-mail:}  tiancao@cs.unc.edu \\
+Chapel Hill, NC 27599-3175 USA&  \url{http://cs.unc.edu/~tiancao/} \\
+\end{tabular}
+ 
+\section{\sc{Research Interests}}       
+\smallskip
+
+Image Analysis, Computer Vision, Machine Learning
+
+\section{\sc Education}
+\smallskip
+
+\textsc{University \textit{of} North Carolina \textit{at} Chapel Hill}, Chapel Hill, NC, USA\\
+\vspace*{-.1in}
+\begin{list1}
+\item[] P.D. candidate in Computer Science \hfill{since 08/2010}
+\end{list1}
+ 
+\textsc{Sichuan University}, Chengdu, Sichuan, China\\
+\vspace*{-.1in}
+\begin{list1}
+\item[] Master of Science in Computer Science \hfill {09/2007-05/2010} %\hfill {GPA: 3.8/4}
+\end{list1}
+ 
+ \textsc{Sichuan University}, Chengdu, Sichuan, China\\
+ \vspace*{-.1in}
+ \begin{list1}
+ \item[] Bachelor of Engineering in Computer Science \hfill{09/2003-05/2007}  %\hfill {Percentage: 91.8\%}
+ \end{list1}
+ 
+\section{\sc Research Experience} 
+\smallskip
+
+\textbf{Deformable registration with built-in invariant to aﬃne transformations} \hfill      2010-2011 \\
+\textit{ Research Assistant}\\
+Developed a deformable registration algorithm with built-in aﬃne transformations, and
+applied this algorithm to the registration between ﬂuorescence microscopy and TEM images.
+
+\textbf{Energy based Crowd Motion Analysis} \hfill      2009-2010 \\
+\textit{Research Assistant}\\
+Developed a energy based crowd motion analysis algorithm based on mutual information, and
+applied this algorithm to detect the crowd abnormal behaviors.
+
+\textbf{Super Resolution and Anisotropic Diﬀusion for Ultrasound Speckle Reduction} \hfill      2009 \\
+\textit{Research Assistant}\\
+Developed a fast and robust super-resolution method for intima reconstruction in medical
+ultrasound imaging, and applied anisotropic diﬀusion to reduce speckle with edge enhance-
+ment during the image reconstruction.
+
+\textbf{GPU Framework for Anisotropic Diffusion} \hfill      2008-2009 \\
+\textit{Research Assistant}\\
+Developed a novel method for motion estimation and visualization of cardiac ultrasound
+images. The motion vector ﬁelds are derived from an adaptive curve region based matching
+algorithm.
+
+\section{\sc Publications}  
+
+[1].\textbf{Tian Cao}, Bo Wang, Dong C. Liu, ``Optimized GPU Framework of Semi-implicit AOS
+Scheme Based Speckle Reducing Nonlinear Diﬀusion'',  \emph{proceedings of SPIE Medical Imaging, 2009, Vol. 7259, 2009}.\\
+\smallskip
+[2].Bo Wang, \textbf{Tian Cao}, Yuguo Dai, Dong C. Liu, ``Ultrasound Speckle Reduction via Super Resolution and Nonlinear Diffusion'',  \emph{the 9th Asian Conference on Computer Vision (ACCV 2009), 2009}. \\
+\smallskip
+[3].\textbf{Tian Cao}, Chaowei Tan, Dong C. Liu, ``Adaptive Curve Region based Motion Estimation and Motion Visualization of Cardiac Ultrasound Imaging'',  \emph{the 3rd International Conference on Bioinformatics and Biomedical Engineering (ICBBE 2009), Vol. 3, pp. 453-457, 2009}.\\
+\smallskip
+[4].\textbf{Tian Cao}, Xinyu Wu, Jinnian Guo, Shiqi Yu, Yangsheng Xu, ``Abnormal Crowd Motion Analysis'', \emph{IEEE International Conference on Robotics and Biomimetics (ROBIO 2009), 2009}.
+
+ 
+\section{\sc Honors \& Awards}
+\smallskip
+
+%{\renewcommand\baselinestretch{1.1}\selectfont
+
+Guanghua Scholarship, Sichuan University.  \hfill       2009 \\
+Graduate Student Fellowship 2009, Sichuan University.  \hfill       2009 \\
+Excellent undergraduate Student, Sichuan University.  \hfill       2007\\
+Student Innovation Award (1st prize), Sichuan University.  \hfill       2006 \\
+1st prize of China Undergraduate Mathematical Contest in Modeling (CUMCM).  \hfill       2006
+
+\section{\sc Professional Skills}
+\smallskip
+
+C/C++, Java, Python, Matlab, Windows, Linux, MaxOS X
+
+%\par}
+\end{resume}
+
+%\bibliography{ref}
+%\bibliographystyle{plain}
+\end{document}
+
+
+
+
+
+
+
