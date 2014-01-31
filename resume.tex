@@ -10,14 +10,21 @@
 %\setlength{\itemsep}{0in}
 %\setlength{\parsep}{0in}
 
-%\setlength{\topmargin}{-0.6in}  % Start text higher on the page
+
+\setlength{\topmargin}{-0.05in}  % Start text higher on the page
+\setlength{\footskip}{.5in}
 %\setlength{\textheight}{9.8in}  % increase textheight to fit more on a page
 %\setlength{\headsep}{0.2in}     % space between header and text
 %\setlength{\headheight}{12pt}   % make room for header
 
 \usepackage{fancyhdr}  % use fancyhdr package to get 2-line header
 \renewcommand{\headrulewidth}{0pt} % suppress line drawn by default by fancyhdr
-\rfoot{Tian Cao  (\thepage/ 2)\\ \hspace*{-\sectionwidth}\emph{tiancao@cs.unc.edu} }  % put page number at right
+%\rfoot{Tian Cao  (\thepage/ 2)\\ \hspace*{-\sectionwidth}\emph{tiancao@cs.unc.edu} }  % put page number at right
+
+\newenvironment{bullets}{\begin{list}{\tiny$\bullet$}{\topsep 0pt \itemsep -2pt \leftmargin .15in}}{\vspace*{4pt}\end{list}}
+
+
+\rfoot{Tian Cao  (\thepage/2) }  % put page number at right
 \cfoot{}  % the footer is empty
 \pagestyle{fancy} % set pagestyle for the document
 
@@ -56,76 +63,97 @@ UNC-Chapel Hill \hfill { E-mail:}  tiancao@cs.unc.edu \\
 Chapel Hill, NC 27599-3175 USA \hfill  \url{http://cs.unc.edu/~tiancao/} 
 %\end{tabular}
 
-\section{\sc{Research Interests}}       
-\smallskip
+\section{\sc{Objective}}       
+%\smallskip
+
+2014 Summer R\&D Intern
+
+\vspace{-.05in}
+\section{\sc{Interests}}       
+%\smallskip
 
 Machine Learning, Computer Vision, Medical Image Analysis
+\vspace{-.05in}
+\section{\sc Experience} 
+\smallskip
 
+\textbf{Intern, Siemens Corporate Research}, Princeton, NJ, USA. \hfill      05/2012-08/2012 
+%  \hfill {Supervisor: Peng Wang}\\
+\begin{bullets} 
+\item Developed and implemented a needle detection method for ultrasound images. 
+\item Incorporated with different features and hough transform to vote the needle segment.
+\end{bullets}
+%\vspace{.05in} %\smallskip 
+%\section{\sc Research Experience} 
+%\smallskip
+\vspace{-.1in}
+\textbf{Research Assistant, UNC Chapel Hill}, Chapel Hill, NC, USA.  \hfill      2011-present \\
+Multi-modal Dictionary Learning for Image Registration  %\hfill {Advisor: Marc Niethammer}
+\begin{bullets}
+\item Developed a multi-modal dictionary learning method for image registration. 
+\item Learning a multi-modal dictionary under a sparse representation model, and applied the learned dictionary to simplify the multi-modal registration problem to a mono-modal one. 
+\item Applied the algorithm to Correlative Microscope images.
+\end{bullets}
+\vspace{-.1in}
+ %\smallskip 
+%\textbf{Deformable Registration with built-in Invariant to Affine Transformations} \hfill      2010-2011 \\
+%\textit{ Research Assistant} at UNC Chapel Hill \hfill {Advisor: Marc Niethammer}\\
+%Developed a deformable registration algorithm with built-in affine transformations, which can update the affine transformation at each deformable registration iteration, and
+%applied this algorithm to the registration between fluorescence microscopy and TEM images.
+%\smallskip \\
+\textbf{Research Assistant, SIAT-Chinese Academy of Sciences}, Shenzhen, China   \hfill      2009-2010 \\ %\hfill {Advisor: Yangsheng Xu}\\
+Energy based Crowd Motion Analysis
+\begin{bullets}
+\item Developed an energy based crowd motion analysis algorithm based on mutual information.
+\item Applied the algorithm to detect the crowd abnormal behaviors.
+\end{bullets}
+\vspace{-.1in}
+%\smallskip 
+\textbf{Research Assistant, Sichuan University}, Chengdu, China \hfill      2009 \\%\hfill {Advisor: Dong C. Liu}\\
+Super Resolution and Anisotropic Diffusion for Ultrasound Speckle Reduction
+\begin{bullets}
+\item Developed a fast and robust super-resolution method for intima reconstruction in medical
+ultrasound imaging. 
+\item Applied anisotropic diffusion to reduce speckle with edge enhancement during the image reconstruction. 
+\end{bullets} %\vspace{.05in} %\smallskip 
+%\textbf{Motion Estimation and Visualization for Cardiac Ultrasound} \hfill      2008-2009 \\
+%\textit{Research Assistant} at SCU \hfill {Advisor: Dong C. Liu}\\
+%Developed a novel method for motion estimation and visualization of cardiac ultrasound images. The motion vector fields are derived from an adaptive curve region based matching algorithm.
+
+\vspace{-.1in}
 \section{\sc Education}
 \smallskip
 
-\textsc{University \textit{of} North Carolina \textit{at} Chapel Hill}, Chapel Hill, NC, USA \hfill{since 08/2010}\\
-\vspace*{-.15in}
-\begin{list1}
-\item[] Ph.D. candidate in Computer Science %\hfill{GPA: 3.6/4.0}
-\end{list1}
+\textsc{University \textit{of} North Carolina \textit{at} Chapel Hill}, Chapel Hill, NC, USA \hfill{08/2010-present}\\
+%\vspace*{-.15in}
+%\begin{list1}
+Ph.D. candidate in Computer Science \hfill{GPA: 3.7/4.0}\\
+%\end{list1}
  %\smallskip
- \vspace*{-.15in}
-\textsc{Sichuan University}, Chengdu, Sichuan, China \hfill {09/2003-05/2010}\\
-\vspace*{-.15in}
-\begin{list1}
-\item[] M.S. in Computer Science  %\hfill {GPA: 3.7/4.0}
+%\vspace*{-.15in}
+\textsc{Sichuan University}, Chengdu, Sichuan, China \hfill {2010} \\
+%\vspace*{-.15in}
+%\begin{list1}
+B.E. and M.S. in Computer Science  \hfill {GPA: 3.6/4.0}
 %\end{list1}
  %\smallskip
 % \vspace*{-.15in}
 %\textsc{Sichuan University}, Chengdu, Sichuan, China \hfill{09/2003-05/2007}\\
 % \vspace*{-.15in}
 %\begin{list1}
- \item[]  B.E. in Computer Science  %\hfill {GPA: 3.6/4.0}
-\end{list1}
+% \item[]  B.E. in Computer Science  %\hfill {GPA: 3.6/4.0}
+%\end{list1}
 
-\section{\sc Industry Experience} 
+\section{\sc Professional Skills}
 \smallskip
 
-\textbf{Research Intern, Siemens Corporate Research} \hfill      05/2012-08/2012 \\
-Princeton, NJ, USA  \hfill {Supervisor: Peng Wang}\\
-Developed and implemented a needle detection method for ultrasound images. Incorporated with different features and hough transform to vote the needle segment.\vspace{.05in} %\smallskip 
-
-\section{\sc Research Experience} 
-\smallskip
-
-\textbf{Multi-modal Dictionary Learning for Image Registration} \hfill      2011-present \\
-\textit{ Research Assistant} at UNC Chapel Hill  \hfill {Advisor: Marc Niethammer}\\
-Developed a multi-modal dictionary learning method for image registration. Learning a multi-modal dictionary under a sparse representation model, and applied the learned dictionary to simplify the multi-modal registration problem to a mono-modal one. Applied the algorithm to Correlative Microscope images.\vspace{.05in}
-\\ %\smallskip 
-%\textbf{Deformable Registration with built-in Invariant to Affine Transformations} \hfill      2010-2011 \\
-%\textit{ Research Assistant} at UNC Chapel Hill \hfill {Advisor: Marc Niethammer}\\
-%Developed a deformable registration algorithm with built-in affine transformations, which can update the affine transformation at each deformable registration iteration, and
-%applied this algorithm to the registration between fluorescence microscopy and TEM images.
-%\smallskip \\
-\textbf{Energy based Crowd Motion Analysis} \hfill      2009-2010 \\
-\textit{Research Assistant} at SIAT-Chinese Academy of Sciences \hfill {Advisor: Yangsheng Xu}\\
-Developed an energy based crowd motion analysis algorithm based on mutual information, and
-applied this algorithm to detect the crowd abnormal behaviors.\vspace{.05in}
-\\ %\smallskip 
-\textbf{Super Resolution and Anisotropic Diffusion for Ultrasound Speckle Reduction} \hfill      2009 \\
-\textit{Research Assistant} at Sichuan University \hfill {Advisor: Dong C. Liu}\\
-Developed a fast and robust super-resolution method for intima reconstruction in medical
-ultrasound imaging, and applied anisotropic diffusion to reduce speckle with edge enhancement during the image reconstruction. \vspace{.05in} %\smallskip 
-%\textbf{Motion Estimation and Visualization for Cardiac Ultrasound} \hfill      2008-2009 \\
-%\textit{Research Assistant} at SCU \hfill {Advisor: Dong C. Liu}\\
-%Developed a novel method for motion estimation and visualization of cardiac ultrasound images. The motion vector fields are derived from an adaptive curve region based matching algorithm.
-
-
-
-
+C/C++, Python, Java, Matlab, bash, ITK, VTK, CUDA
 
 \section{\sc Publications}  
 \smallskip
-$[1]$.\textbf{Tian Cao}, Christopher Zach, Marc Niethammer et al., ``Multi-modal Registration for Correlative Microscopy using Image Analogies'', \emph{Medical Image Analysis
-, Elsevier, 2013}. \vspace{.05in}\\
+$[1]$.\textbf{Tian Cao}, Christopher Zach, Marc Niethammer et al., ``Multi-modal Registration for Correlative Microscopy using Image Analogies'', \emph{Medical Image Analysis, Elsevier, 2013}. \vspace{.05in}\\
 $[2]$.\textbf{Tian Cao}, Vladimir Jojic, Marc Niethammer et al., ``Robust Multimodal Dictionary Learning'', \emph{The 16th International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI 2013), 2013}. \vspace{.05in}\\ 
-$[3]$.\textbf{Tian Cao}, Christopher Zach, Marc Niethammer et al., ``Registration for Correlative Microscopy using Image Analogies'',  \emph{Fifth Workshop on Biomedical Image Registration (WBIR 2012), 2012}. \textbf{Oral Presentation}.\vspace{.05in}\\%\smallskip
+$[3]$.\textbf{Tian Cao}, Christopher Zach, Marc Niethammer et al., ``Registration for Correlative Microscopy using Image Analogies'',  \emph{Fifth Workshop on Biomedical Image Registration (WBIR 2012), 2012}. \vspace{.05in}\\%\smallskip \textbf{Oral Presentation}.
 $[4]$.Bo Wang, \textbf{Tian Cao}, Yuguo Dai, Dong C. Liu, ``Ultrasound Speckle Reduction via Super Resolution and Nonlinear Diffusion'',  \emph{the 9th Asian Conference on Computer Vision (ACCV 2009), 2009}. \vspace{.05in}\\
 %\smallskip
 $[5]$.\textbf{Tian Cao}, Bo Wang, Dong C. Liu, ``Optimized GPU Framework of Semi-implicit AOS
@@ -146,17 +174,14 @@ $[7]$.\textbf{Tian Cao}, Xinyu Wu, Jinnian Guo, Shiqi Yu, Yangsheng Xu, ``Abnorm
 
 %{\renewcommand\baselinestretch{1.1}\selectfont
 
-Guanghua Scholarship.  (5\%)\hfill       2010\\
+Guanghua Scholarship.  \hfill       2010\\
 %Excellent graduate for Master Students, Sichuan University. \hfill       2010\\
 Graduate Student Fellowship, Sichuan University.  \hfill       2009\\
 %Excellent graduate for Undergraduate Students, Sichuan University.  \hfill       2007\\
-Student Innovation Award (top 3\%), Sichuan University.  \hfill       2006, 2007 \\%\vspace{.1in}\\
+Student Innovation Award, Sichuan University.  \hfill       2006, 2007 \\%\vspace{.1in}\\
 1st prize of China Undergraduate Mathematical Contest in Modeling.  \hfill       2006
 
-\section{\sc Professional Skills}
-\smallskip
 
-C/C++, Java, Python, Matlab, Windows, Linux, MaxOS X
 
 %\par}
 \end{resume}
