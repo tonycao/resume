@@ -10,7 +10,6 @@
 %\setlength{\itemsep}{0in}
 %\setlength{\parsep}{0in}
 
-
 \setlength{\topmargin}{-0.05in}  % Start text higher on the page
 \setlength{\footskip}{.5in}
 %\setlength{\textheight}{9.8in}  % increase textheight to fit more on a page
@@ -22,7 +21,6 @@
 %\rfoot{Tian Cao  (\thepage/ 2)\\ \hspace*{-\sectionwidth}\emph{tiancao@cs.unc.edu} }  % put page number at right
 
 \newenvironment{bullets}{\begin{list}{\tiny$\bullet$}{\topsep 0pt \itemsep -2pt \leftmargin .15in}}{\vspace*{4pt}\end{list}}
-
 
 \rfoot{Tian Cao  (\thepage/2) }  % put page number at right
 \cfoot{}  % the footer is empty
@@ -66,101 +64,109 @@ Chapel Hill, NC 27599-3175 USA \hfill  \url{http://cs.unc.edu/~tiancao/}
 \section{\sc{Objective}}       
 %\smallskip
 
-2014 Summer R\&D Intern
+2015 Summer R\&D Intern
 
 \vspace{-.05in}
 \section{\sc{Interests}}       
 %\smallskip
 
-Machine Learning, Computer Vision, Medical Image Analysis
-\vspace{-.05in}
-\section{\sc Experience} 
+Machine Learning, Image Analysis, Computer Vision %\\
+%Deep Learning, Dictionary Learning, Image Classification
+
+
+
+\section{\sc Education}
 \smallskip
 
-\textbf{Intern, Siemens Corporate Research}, Princeton, NJ, USA. \hfill      05/2012-08/2012 
+\textsc{\textbf{University of North Carolina at Chapel Hill}}, Chapel Hill, NC, USA \hfill{08/2010-present}\\
+\vspace*{-.15in}
+\begin{list1}
+\item[] Ph.D. candidate in Computer Science %\hfill{GPA: 3.72/4.0}
+\end{list1}
+% \smallskip
+\vspace*{-.02in}
+\textsc{\textbf{Sichuan University}}, Chengdu, Sichuan, China \hfill {09/2007-06/2010} \\
+\vspace*{-.15in}
+\begin{list1}
+\item[] M.S. in Computer Science  %\hfill {GPA: 3.67/4.0}
+\end{list1}
+ %\smallskip
+\vspace*{-.02in}
+\textsc{\textbf{Sichuan University}}, Chengdu, Sichuan, China \hfill{09/2003-05/2007}\\
+\vspace*{-.15in}
+\begin{list1}
+\item[] B.E. in Computer Science  %\hfill {GPA: 3.63/4.0}
+\end{list1}
+
+\vspace{-.05in}
+\section{\sc Experience}
+\smallskip
+
+\textbf{Research Assistant, UNC Chapel Hill}, Chapel Hill, NC, USA.  \hfill      09/2010-present \\
+Multi-modal Dictionary Learning for Sparse Representation %\hfill {Advisor: Marc Niethammer}
+\begin{bullets}
+\item Developed dictionary learning for multi-modal image prediction, classification and registration. 
+\item Learning multi-modal dictionaries based on sparse coding and deep learning architecture, and applied the learned dictionary to simplify the multi-modal image analysis problems. 
+\item Applied the algorithm to Correlative Microscope images.
+\item Implemented in VTK, ITK, matlab and C++.
+\end{bullets}
+\vspace{-.1in}
+
+\textbf{Intern, Siemens Corporate Research}, Princeton, NJ, USA. \hfill      05/2012-08/2012 \\
 %  \hfill {Supervisor: Peng Wang}\\
+Object Detection in Ultrasound Videos
 \begin{bullets} 
-\item Developed and implemented a needle detection method for ultrasound images. 
+\item Developed and implemented a needle detection method for ultrasound videos. 
+\item Implemented a 3D steerable filtering method to incorporate spatial and temporal information for needle detection in C++ and MFC.
 \item Incorporated with different features and hough transform to vote the needle segment.
 \end{bullets}
 %\vspace{.05in} %\smallskip 
 %\section{\sc Research Experience} 
 %\smallskip
 \vspace{-.1in}
-\textbf{Research Assistant, UNC Chapel Hill}, Chapel Hill, NC, USA.  \hfill      2011-present \\
-Multi-modal Dictionary Learning for Image Registration  %\hfill {Advisor: Marc Niethammer}
-\begin{bullets}
-\item Developed a multi-modal dictionary learning method for image registration. 
-\item Learning a multi-modal dictionary under a sparse representation model, and applied the learned dictionary to simplify the multi-modal registration problem to a mono-modal one. 
-\item Applied the algorithm to Correlative Microscope images.
-\end{bullets}
-\vspace{-.1in}
+
  %\smallskip 
 %\textbf{Deformable Registration with built-in Invariant to Affine Transformations} \hfill      2010-2011 \\
 %\textit{ Research Assistant} at UNC Chapel Hill \hfill {Advisor: Marc Niethammer}\\
 %Developed a deformable registration algorithm with built-in affine transformations, which can update the affine transformation at each deformable registration iteration, and
 %applied this algorithm to the registration between fluorescence microscopy and TEM images.
 %\smallskip \\
-\textbf{Research Assistant, SIAT-Chinese Academy of Sciences}, Shenzhen, China   \hfill      2009-2010 \\ %\hfill {Advisor: Yangsheng Xu}\\
+\textbf{Research Assistant, Chinese Academy of Sciences}, Shenzhen, China   \hfill      09/2009-03/2010 \\ %\hfill {Advisor: Yangsheng Xu}\\
 Energy based Crowd Motion Analysis
 \begin{bullets}
 \item Developed an energy based crowd motion analysis algorithm based on mutual information.
 \item Applied the algorithm to detect the crowd abnormal behaviors.
+\item Implemented in OPENCV and C++.
 \end{bullets}
 \vspace{-.1in}
 %\smallskip 
-\textbf{Research Assistant, Sichuan University}, Chengdu, China \hfill      2009 \\%\hfill {Advisor: Dong C. Liu}\\
-Super Resolution and Anisotropic Diffusion for Ultrasound Speckle Reduction
+\textbf{Research Assistant, Sichuan University}, Chengdu, China \hfill      01/2008-09/2009 \\%\hfill {Advisor: Dong C. Liu}\\
+Super-resolution for Ultrasound Speckle Reduction
 \begin{bullets}
-\item Developed a fast and robust super-resolution method for intima reconstruction in medical
-ultrasound imaging. 
-\item Applied anisotropic diffusion to reduce speckle with edge enhancement during the image reconstruction. 
+\item Developed a fast and robust super-resolution method for intima reconstruction in
+ultrasound. 
+\item Applied anisotropic diffusion to reduce speckle with edge enhancement in image reconstruction.
+\item Implemented anisotropic diffusion method in C++ and GLSL.
 \end{bullets} %\vspace{.05in} %\smallskip 
 %\textbf{Motion Estimation and Visualization for Cardiac Ultrasound} \hfill      2008-2009 \\
 %\textit{Research Assistant} at SCU \hfill {Advisor: Dong C. Liu}\\
 %Developed a novel method for motion estimation and visualization of cardiac ultrasound images. The motion vector fields are derived from an adaptive curve region based matching algorithm.
 
 \vspace{-.1in}
-\section{\sc Education}
-\smallskip
 
-\textsc{University \textit{of} North Carolina \textit{at} Chapel Hill}, Chapel Hill, NC, USA \hfill{08/2010-present}\\
-%\vspace*{-.15in}
-%\begin{list1}
-Ph.D. candidate in Computer Science \hfill{GPA: 3.7/4.0}\\
-%\end{list1}
- %\smallskip
-%\vspace*{-.15in}
-\textsc{Sichuan University}, Chengdu, Sichuan, China \hfill {2010} \\
-%\vspace*{-.15in}
-%\begin{list1}
-B.E. and M.S. in Computer Science  \hfill {GPA: 3.6/4.0}
-%\end{list1}
- %\smallskip
-% \vspace*{-.15in}
-%\textsc{Sichuan University}, Chengdu, Sichuan, China \hfill{09/2003-05/2007}\\
-% \vspace*{-.15in}
-%\begin{list1}
-% \item[]  B.E. in Computer Science  %\hfill {GPA: 3.6/4.0}
-%\end{list1}
-
-\section{\sc Professional Skills}
-\smallskip
-
-C/C++, Python, Java, Matlab, bash, ITK, VTK, CUDA
 
 \section{\sc Publications}  
 \smallskip
-$[1]$.\textbf{Tian Cao}, Christopher Zach, Marc Niethammer et al., ``Multi-modal Registration for Correlative Microscopy using Image Analogies'', \emph{Medical Image Analysis, Elsevier, 2013}. \vspace{.05in}\\
-$[2]$.\textbf{Tian Cao}, Vladimir Jojic, Marc Niethammer et al., ``Robust Multimodal Dictionary Learning'', \emph{The 16th International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI 2013), 2013}. \vspace{.05in}\\ 
-$[3]$.\textbf{Tian Cao}, Christopher Zach, Marc Niethammer et al., ``Registration for Correlative Microscopy using Image Analogies'',  \emph{Fifth Workshop on Biomedical Image Registration (WBIR 2012), 2012}. \vspace{.05in}\\%\smallskip \textbf{Oral Presentation}.
-$[4]$.Bo Wang, \textbf{Tian Cao}, Yuguo Dai, Dong C. Liu, ``Ultrasound Speckle Reduction via Super Resolution and Nonlinear Diffusion'',  \emph{the 9th Asian Conference on Computer Vision (ACCV 2009), 2009}. \vspace{.05in}\\
+$[1]$.\textbf{Tian Cao}, Christopher Zach, Marc Niethammer et al., ``Multi-modal Registration for Correlative Microscopy using Image Analogies'', \emph{Medical Image Analysis} (\textbf{MedIA}), Elsevier, 2013. \vspace{.05in}\\
+$[2]$.\textbf{Tian Cao}, Vladimir Jojic, Marc Niethammer et al., ``Robust Multimodal Dictionary Learning'', \emph{The 16th International Conference on Medical Image Computing and Computer Assisted Intervention} (\textbf{MICCAI}), 2013. \vspace{.05in}\\ 
+$[3]$.\textbf{Tian Cao}, Christopher Zach, Marc Niethammer et al., ``Registration for Correlative Microscopy using Image Analogies'',  \emph{Fifth Workshop on Biomedical Image Registration} (\textbf{WBIR}), 2012. \vspace{.05in}\\%\smallskip \textbf{Oral Presentation}.
+$[4]$.Bo Wang, \textbf{Tian Cao}, Yuguo Dai, Dong C. Liu, ``Ultrasound Speckle Reduction via Super Resolution and Nonlinear Diffusion'',  \emph{the 9th Asian Conference on Computer Vision} (\textbf{ACCV}), 2009. \vspace{.05in}\\
 %\smallskip
 $[5]$.\textbf{Tian Cao}, Bo Wang, Dong C. Liu, ``Optimized GPU Framework of Semi-implicit AOS
-Scheme Based Speckle Reducing Nonlinear Diﬀusion'',  \emph{proceedings of SPIE Medical Imaging, 2009, Vol. 7259, 2009}.\vspace{.05in}\\%\smallskip  
-$[6]$.\textbf{Tian Cao}, Chaowei Tan, Dong C. Liu, ``Adaptive Curve Region based Motion Estimation and Motion Visualization of Cardiac Ultrasound Imaging'',  \emph{the 3rd International Conference on Bioinformatics and Biomedical Engineering (ICBBE 2009), Vol. 3, pp. 453-457, 2009}.\vspace{.05in}\\
+Scheme Based Speckle Reducing Nonlinear Diﬀusion'',  \emph{proceedings of SPIE Medical Imaging} (\textbf{SPIE MI}), 2009, Vol. 7259, 2009.\vspace{.05in}\\%\smallskip  
+$[6]$.\textbf{Tian Cao}, Chaowei Tan, Dong C. Liu, ``Adaptive Curve Region based Motion Estimation and Motion Visualization of Cardiac Ultrasound Imaging'',  \emph{the 3rd International Conference on Bioinformatics and Biomedical Engineering} (\textbf{ICBBE}), Vol. 3, pp. 453-457, 2009.\vspace{.05in}\\
 %\smallskip
-$[7]$.\textbf{Tian Cao}, Xinyu Wu, Jinnian Guo, Shiqi Yu, Yangsheng Xu, ``Abnormal Crowd Motion Analysis'', \emph{IEEE International Conference on Robotics and Biomimetics (ROBIO 2009), 2009}.
+$[7]$.\textbf{Tian Cao}, Xinyu Wu, Jinnian Guo, Shiqi Yu, Yangsheng Xu, ``Abnormal Crowd Motion Analysis'', \emph{IEEE International Conference on Robotics and Biomimetics} (\textbf{ROBIO}), 2009.
 
 %\section{\sc Conference Talk} 
 %\smallskip
@@ -168,6 +174,11 @@ $[7]$.\textbf{Tian Cao}, Xinyu Wu, Jinnian Guo, Shiqi Yu, Yangsheng Xu, ``Abnorm
 %\textbf{Workshop on Biomedical Image Registration} \hfill      07/2012 \\
 %Vanderbilt University, Nashville, TN, USA  \hfill \\%{Supervisor: Peng Wang}\\
 %Topic:  Registration for Correlative Microscopy using Image Analogies \vspace{.05in}
+
+\section{\sc Professional Skills}
+\smallskip
+
+C/C++, Python, Java, Matlab, Bash, ITK, VTK, OPENCV, CUDA, MFC, SQL, GLSL
  
 \section{\sc Selected Awards}
 %\smallskip
