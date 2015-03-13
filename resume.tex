@@ -1,16 +1,53 @@
 % LaTeX resume using res.cls
 \documentclass[line,margin]{res} 
+
+\def\myauthor{Tian Cao}
+\def\mytitle{tc-vita}
+\def\myemail{tiancao@cs.unc.com}
+\def\myweb{tiancao.me}
+\def\myphone{(919) 699-9542}
+\def\mykeywords{
+	tian cao, 
+	resume, 
+	curriculum, 
+	vita, 
+	curriculum vita, 
+	cv, 
+	tian, 
+	cao, 
+	tc
+}
+
+
+\usepackage[svgnames]{xcolor}
+\usepackage[strict]{changepage}
+\usepackage{fontawesome}
+\usepackage[
+ocgcolorlinks,
+urlcolor=DarkSlateBlue, %urlcolor={[rgb]{0,0,0.54}},
+citecolor=DarkSlateBlue, 
+filecolor=DarkSlateBlue,
+unicode,
+plainpages=false,
+pdfpagelabels,
+pdftitle={\mytitle},
+pdfauthor={\myauthor},
+pdfkeywords={\mykeywords}
+]{hyperref}
 \usepackage{hyperref}
+
+
+%\usepackage{fontawesome}
 %\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
 %\usepackage{newcent}   % uses new century schoolbook postscript font 
 
-\setlength{\oddsidemargin}{-.5in}
-\setlength{\evensidemargin}{-.5in}
-\setlength{\textwidth}{6.0in}
+\setlength{\oddsidemargin}{-.3in}
+\setlength{\evensidemargin}{-.3in}
+\setlength{\textwidth}{5.5in}
 %\setlength{\itemsep}{0in}
 %\setlength{\parsep}{0in}
 
-\setlength{\topmargin}{-0.05in}  % Start text higher on the page
+\setlength{\topmargin}{.05in} %{-0.05in}  % Start text higher on the page
 \setlength{\footskip}{.5in}
 %\setlength{\textheight}{9.8in}  % increase textheight to fit more on a page
 %\setlength{\headsep}{0.2in}     % space between header and text
@@ -44,29 +81,55 @@
 
 \begin{document}
 
-\name{\huge{\sc Tian Cao} \vspace*{.1in}}
+\begin{adjustwidth}{-1.3in}{}
+	{\Huge
+		{\textsc{%
+				{\addfontfeature{Style=TitlingCaps}T}\kern-1.5ptian
+				{\addfontfeature{Style=TitlingCaps}C}ao}
+		}
+	}
+	\hfill\hfill\hfill
+	{
+		\begin{minipage}[b]{2in}
+			\flushleft %\footnotesize 
+			100 Rock Haven Road \\ 
+			APT E208 \\ 
+			Carrboro, NC~~27510
+		\end{minipage}
+		\hfill
+		\begin{minipage}[b]{1.8in}
+			\flushright %\footnotesize 
+			(919) 699-9542 \, \faPhone \\ 
+			\texttt{\href{mailto:tiancao@cs.unc.edu}{tiancao@cs.unc.edu}}\, \faEnvelope \\
+			\texttt{\href{https://tiancao.me/}{tiancao.me}}\, \faGlobe 
+		\end{minipage}
+	}\par
+	%\hrulefill
+\end{adjustwidth}  
+
+%\name{\huge{\sc Tian Cao} \vspace*{.1in}}
 % \address used twice to have two lines of address
 %\address{1985  Storm Lane, Troy, NY 12180}
 %\address{(518) 273-0014 or (518) 272-6666}
 
 \begin{resume}
-\section{\sc{Contact Information}}
-\smallskip
-%\begin{tabular}{@{}p{3in}p{3in}}
-%\begin{tabular}{@{} l r}
-%\begin{tabular}{@{}p{3in} r}
-Department of Computer Science  \hfill { Mobile:}  (+1) 919-699-9542 \\
-%Campus Box 3175, Sitterson Hall  \hfill { Office phone:} (+1) 919-843-7425 \\      
-UNC-Chapel Hill \hfill { Email:}  tiancao@cs.unc.edu \\
-Chapel Hill, NC 27599-3175 USA \hfill  \url{http://tiancao.me/} 
-%\end{tabular}
-
-\section{\sc{Objective}}       
+%\section{\sc{Contact Information}}
 %\smallskip
+%%\begin{tabular}{@{}p{3in}p{3in}}
+%%\begin{tabular}{@{} l r}
+%%\begin{tabular}{@{}p{3in} r}
+%Department of Computer Science  \hfill { Mobile:}  (+1) 919-699-9542 \\
+%%Campus Box 3175, Sitterson Hall  \hfill { Office phone:} (+1) 919-843-7425 \\      
+%UNC-Chapel Hill \hfill { Email:}  tiancao@cs.unc.edu \\
+%Chapel Hill, NC 27599-3175 USA \hfill  \url{http://tiancao.me/} 
+%%\end{tabular}
 
-Full-time R\&D position
-
-\vspace{-.05in}
+%\section{\sc{Objective}}       
+%%\smallskip
+%
+%Full-time R\&D position
+%
+%\vspace{-.05in}
 \section{\sc{Interests}}       
 %\smallskip
 
@@ -103,7 +166,7 @@ Machine Learning, Image Analysis, Computer Vision %\\
 \smallskip
 
 
-\textbf{Research Intern, IBM Almaden Research Center}, San Jose, CA, USA. \hfill      05/2014-08/2014 \\
+\textbf{Research Intern, IBM Almaden Research Center}, San Jose, CA. \hfill      05/2014-08/2014 \\
 %  \hfill {Supervisor: Peng Wang}\\
 Multi-atlas based Image Segmentation
 \begin{bullets} 
@@ -116,7 +179,7 @@ Multi-atlas based Image Segmentation
 %\smallskip
 \vspace{-.1in}
 
-\textbf{Research Intern, Siemens Corporate Research}, Princeton, NJ, USA. \hfill      05/2012-08/2012 \\
+\textbf{Research Intern, Siemens Corporate Research}, Princeton, NJ. \hfill      05/2012-08/2012 \\
 %  \hfill {Supervisor: Peng Wang}\\
 Real-time Object Detection in Ultrasound Videos
 \begin{bullets} 
@@ -129,7 +192,7 @@ Real-time Object Detection in Ultrasound Videos
 %\smallskip
 \vspace{-.1in}
 
-\textbf{Research Assistant, UNC Chapel Hill}, Chapel Hill, NC, USA.  \hfill      09/2010-present \\
+\textbf{Research Assistant, UNC Chapel Hill}, Chapel Hill, NC.  \hfill      09/2010-present \\
 Coupled Dictionary Learning for Image Analysis %\hfill {Advisor: Marc Niethammer}
 \begin{bullets}
 \item Developed coupled dictionary learning methods for multi-modal image prediction, classification and registration.
@@ -192,7 +255,7 @@ $[7]$.\textbf{Tian Cao}, Xinyu Wu, Jinnian Guo, Shiqi Yu, Yangsheng Xu, ``Abnorm
 \section{\sc Professional Skills}
 \smallskip
 
-C/C++, Python, Java, Matlab, Bash, ITK, VTK, OPENCV, CUDA, MFC, SQL, GLSL
+C/C++, Python, Java, Matlab, Bash, ITK, VTK, OPENCV, CUDA, MFC, GLSL
  
 \section{\sc Selected Awards}
 %\smallskip
@@ -200,7 +263,7 @@ C/C++, Python, Java, Matlab, Bash, ITK, VTK, OPENCV, CUDA, MFC, SQL, GLSL
 %{\renewcommand\baselinestretch{1.1}\selectfont
 
 Guanghua Scholarship.  \hfill       2010\\
-%Excellent graduate for Master Students, Sichuan University. \hfill       2010\\
+Outstanding graduate Student Award, Sichuan University. \hfill       2010\\
 Graduate Student Fellowship, Sichuan University.  \hfill       2007-2010\\
 %Excellent graduate for Undergraduate Students, Sichuan University.  \hfill       2007\\
 Student Innovation Award, Sichuan University.  \hfill        2005-2007 \\%\vspace{.1in}\\
