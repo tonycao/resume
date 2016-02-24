@@ -1,3 +1,4 @@
+%!TEX program = xelatex
 % LaTeX resume using res.cls
 \documentclass[line,margin]{res} 
 
@@ -25,8 +26,8 @@
 \usepackage[
 ocgcolorlinks,
 urlcolor=DarkSlateBlue, %urlcolor={[rgb]{0,0,0.54}},
-citecolor=DarkSlateBlue, 
-filecolor=DarkSlateBlue,
+citecolor=DarkSlateBlue,  
+filecolor=DarkSlateBlue, 
 unicode,
 plainpages=false,
 pdfpagelabels,
@@ -64,235 +65,216 @@ pdfkeywords={\mykeywords}
 \pagestyle{fancy} % set pagestyle for the document
 
 \newenvironment{list1}{
-  \begin{list}{\ding{113}}{%
-      \setlength{\itemsep}{0in}
-      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
-      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
-      \setlength{\leftmargin}{0.17in}}}{\end{list}}
+	\begin{list}{\ding{113}}{%
+			\setlength{\itemsep}{0in}
+			\setlength{\parsep}{0in} \setlength{\parskip}{0in}
+			\setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+			\setlength{\leftmargin}{0.17in}}}{\end{list}}
 \newenvironment{list2}{
-  \begin{list}{$\bullet$}{%
-      \setlength{\itemsep}{0in}
-      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
-      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
-      \setlength{\leftmargin}{0.2in}}}{\end{list}}
-      
+	\begin{list}{$\bullet$}{%
+			\setlength{\itemsep}{0in}
+			\setlength{\parsep}{0in} \setlength{\parskip}{0in}
+			\setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+			\setlength{\leftmargin}{0.2in}}}{\end{list}}
+
 {\def\section*#1{}\bibliography{ref}}
 %\nocite{*}
 
 \begin{document}
-
-\begin{adjustwidth}{-1.3in}{}
-	{\Huge
-		{\textsc{%
-				{\addfontfeature{Style=TitlingCaps}T}\kern-1.5ptian
-				{\addfontfeature{Style=TitlingCaps}C}ao}
+	
+	\begin{adjustwidth}{-1.3in}{}
+		{\Huge
+			{\textsc{%
+					{\addfontfeature{Style=TitlingCaps}T}\kern-1.5ptian
+					{\addfontfeature{Style=TitlingCaps}C}ao}
+			}
 		}
-	}
-	\hfill\hfill\hfill
-	{
-		\begin{minipage}[b]{2in}
-			\flushleft %\footnotesize 
-			100 Rock Haven Road \\ 
-			APT E208 \\ 
-			Carrboro, NC~~27510
-		\end{minipage}
-		\hfill
-		\begin{minipage}[b]{1.8in}
-			\flushright %\footnotesize 
-			(919) 699-9542 \, \faPhone \\ 
-			\texttt{\href{mailto:tiancao@cs.unc.edu}{tiancao@cs.unc.edu}}\, \faEnvelope \\
-			\texttt{\href{http://tiancao.me/}{tiancao.me}}\, \faGlobe 
-		\end{minipage}
-	}\par
-	%\hrulefill
-\end{adjustwidth}  
-
-%\name{\huge{\sc Tian Cao} \vspace*{.1in}}
-% \address used twice to have two lines of address
-%\address{1985  Storm Lane, Troy, NY 12180}
-%\address{(518) 273-0014 or (518) 272-6666}
-
-\begin{resume}
-%\section{\sc{Contact Information}}
-%\smallskip
-%%\begin{tabular}{@{}p{3in}p{3in}}
-%%\begin{tabular}{@{} l r}
-%%\begin{tabular}{@{}p{3in} r}
-%Department of Computer Science  \hfill { Mobile:}  (+1) 919-699-9542 \\
-%%Campus Box 3175, Sitterson Hall  \hfill { Office phone:} (+1) 919-843-7425 \\      
-%UNC-Chapel Hill \hfill { Email:}  tiancao@cs.unc.edu \\
-%Chapel Hill, NC 27599-3175 USA \hfill  \url{http://tiancao.me/} 
-%%\end{tabular}
-
-%\section{\sc{Objective}}       
-%%\smallskip
-%
-%Full-time R\&D position
-%
-%\vspace{-.05in}
-\section{\sc{Interests}}       
-%\smallskip
-
-Computer Vision, Machine Learning, Image Analysis  %\\
-%Deep Learning, Dictionary Learning, Image Classification
-
-
-
-\section{\sc Education}
-\smallskip
-
-\textsc{\textbf{University of North Carolina at Chapel Hill}}, Chapel Hill, NC \hfill{12/2015(expected)}\\
-\vspace*{-.15in}
-\begin{list1}
-\item[] Ph.D. candidate in Computer Science %\hfill{GPA: 3.7/4.0}
-%\item[] Dissertation title: Coupled Dictionary Learning for Image Analysis
-\end{list1}
-% \smallskip
-\vspace*{-.15in}
-\textsc{\textbf{Sichuan University}}, Chengdu, Sichuan, China \hfill {06/2010} \\
-\vspace*{-.15in}
-\begin{list1}
-\item[] M.S. in Computer Science  %\hfill {GPA: 3.7/4.0}
-\end{list1}
- %\smallskip
-\vspace*{-.15in}
-\textsc{\textbf{Sichuan University}}, Chengdu, Sichuan, China \hfill{05/2007}\\
-\vspace*{-.15in}
-\begin{list1}
-\item[] B.E. in Computer Science  %\hfill {GPA: 3.6/4.0}
-\end{list1}
-
-\section{\sc Skills}
-\smallskip
-
-C/C++, Java, Matlab, Python, Bash, CUDA, OPENCV
-
-
-\vspace{-.05in}
-\section{\sc Experience}
-\smallskip
-
-\textbf{Research Project, UNC Chapel Hill}, Chapel Hill, NC  \hfill      09/2014-present \\
-Image Annotation using Deep Learning Representations%\hfill {Advisor: Marc Niethammer}
-\begin{bullets}
-	\item Developed automatic image annotation with Convolutional Neural Network(CNN) features.
-	\item Jointly modeling the image features and word features and tested on multiple dataset.
-	%\item Applied the algorithm to Correlative Microscope images.
-	\item Implemented in matlab, C++ and Caffe.
-\end{bullets}
-\vspace{-.1in}
-
-\textbf{Research Project, UNC Chapel Hill}, Chapel Hill, NC  \hfill      09/2010-present \\
-Coupled Dictionary Learning for Image Analysis %\hfill {Advisor: Marc Niethammer}
-\begin{bullets}
-	\item Developed coupled dictionary learning methods for image analysis.
-	\item Learning coupled dictionaries based on sparse coding, and applied the learned dictionary to multi-modal image analysis problems.
-	%\item Applied the algorithm to Correlative Microscope images.
-	\item Implemented in matlab and C++.
-\end{bullets}
-\vspace{-.1in}
-
-
-\textbf{Research Intern, IBM Almaden Research Center}, San Jose, CA \hfill      05/2014-08/2014 \\
-%  \hfill {Supervisor: Peng Wang}\\
-Multi-atlas based Image Segmentation
-\begin{bullets} 
-\item Investigated methods of learning from ambiguous labels.
-\item Investigated atlas based image segmentation methods with different local features and classifiers.
-\item Implemented atlas based image segmentation framework in Java and matlab.
-\end{bullets}
-%\vspace{.05in} %\smallskip 
-%\section{\sc Research Experience} 
-%\smallskip
-\vspace{-.1in}
-
-\textbf{Research Intern, Siemens Corporate Research}, Princeton, NJ \hfill      05/2012-08/2012 \\
-%  \hfill {Supervisor: Peng Wang}\\
-Real-time Object Detection in Ultrasound Videos
-\begin{bullets} 
-\item Developed and implemented a needle detection method for ultrasound videos. 
-\item Incorporated with different features and hough transform to vote the needle segment.
-\item Implemented a 3D steerable filtering method to incorporate spatial and temporal information for needle detection in C++.
-
-\end{bullets}
-%\vspace{.05in} %\smallskip 
-%\section{\sc Research Experience} 
-%\smallskip
-\vspace{-.1in}
-
- %\smallskip 
-%\textbf{Deformable Registration with built-in Invariant to Affine Transformations} \hfill      2010-2011 \\
-%\textit{ Research Assistant} at UNC Chapel Hill \hfill {Advisor: Marc Niethammer}\\
-%Developed a deformable registration algorithm with built-in affine transformations, which can update the affine transformation at each deformable registration iteration, and
-%applied this algorithm to the registration between fluorescence microscopy and TEM images.
-%\smallskip \\
-\textbf{Research Project, Chinese Academy of Sciences}, Shenzhen, China   \hfill      09/2009-03/2010 \\ %\hfill {Advisor: Yangsheng Xu}\\
-Energy based Crowd Motion Analysis
-\begin{bullets}
-\item Developed an energy based crowd motion analysis algorithm based on mutual information.
-\item Applied the algorithm to detect the crowd abnormal behaviors.
-\item Implemented in OPENCV and C++.
-\end{bullets}
-\vspace{-.1in}
-
-%\smallskip 
-\textbf{Research Project, Sichuan University}, Chengdu, China \hfill      01/2008-09/2009 \\%\hfill {Advisor: Dong C. Liu}\\
-Super-resolution for Ultrasound Speckle Reduction
-\begin{bullets}
-\item Developed a fast and robust super-resolution method for intima reconstruction in
-ultrasound. 
-\item Applied anisotropic diffusion to reduce speckle with edge enhancement in image reconstruction.
-\item Implemented anisotropic diffusion method in C++ and GLSL.
-\end{bullets} %\vspace{.05in} %\smallskip 
-%\textbf{Motion Estimation and Visualization for Cardiac Ultrasound} \hfill      2008-2009 \\
-%\textit{Research Assistant} at SCU \hfill {Advisor: Dong C. Liu}\\
-%Developed a novel method for motion estimation and visualization of cardiac ultrasound images. The motion vector fields are derived from an adaptive curve region based matching algorithm.
-
-\vspace{-.1in}
-
-
-\section{\sc Publications}  
-\smallskip
-$[1]$.\textbf{Tian Cao}, Nikhil Singh, Vladimir Jojic, Marc Niethammer, ``Semi-coupled Dictionary Learning for Deformation Prediction'', \emph{International Symposium on Biomedical Imaging} (\textbf{ISBI}), 2015. \vspace{.05in}\\
-$[2]$.\textbf{Tian Cao}, Christopher Zach, Marc Niethammer et al., ``Multi-modal Registration for Correlative Microscopy using Image Analogies'', \emph{Medical Image Analysis} (\textbf{MedIA}), Elsevier, 2014. \vspace{.05in}\\
-$[3]$.\textbf{Tian Cao}, Vladimir Jojic, Marc Niethammer et al., ``Robust Multimodal Dictionary Learning'', \emph{The 16th International Conference on Medical Image Computing and Computer Assisted Intervention} (\textbf{MICCAI}), 2013. \vspace{.05in}\\ 
-$[4]$.\textbf{Tian Cao}, Christopher Zach, Marc Niethammer et al., ``Registration for Correlative Microscopy using Image Analogies'',  \emph{Fifth Workshop on Biomedical Image Registration} (\textbf{WBIR}), 2012. \vspace{.05in}\\%\smallskip \textbf{Oral Presentation}.
-$[5]$.Bo Wang, \textbf{Tian Cao}, Yuguo Dai, Dong C. Liu, ``Ultrasound Speckle Reduction via Super Resolution and Nonlinear Diffusion'',  \emph{the 9th Asian Conference on Computer Vision} (\textbf{ACCV}), 2009. \vspace{.05in}\\
-%\smallskip
-$[6]$.\textbf{Tian Cao}, Bo Wang, Dong C. Liu, ``Optimized GPU Framework of Semi-implicit AOS
-Scheme Based Speckle Reducing Nonlinear Diffusion'',  \emph{proceedings of SPIE Medical Imaging} (\textbf{SPIE MI}), 2009.\vspace{.05in}\\%\smallskip  
-$[7]$.\textbf{Tian Cao}, Chaowei Tan, Dong C. Liu, ``Adaptive Curve Region based Motion Estimation and Motion Visualization of Cardiac Ultrasound Imaging'',  \emph{the 3rd International Conference on Bioinformatics and Biomedical Engineering} (\textbf{ICBBE}), 2009.\vspace{.05in}\\
-%\smallskip
-$[8]$.\textbf{Tian Cao}, Xinyu Wu, Jinnian Guo, Shiqi Yu, Yangsheng Xu, ``Abnormal Crowd Motion Analysis'', \emph{IEEE International Conference on Robotics and Biomimetics} (\textbf{ROBIO}), 2009.
-
-%\section{\sc Conference Talk} 
-%\smallskip
-%
-%\textbf{Workshop on Biomedical Image Registration} \hfill      07/2012 \\
-%Vanderbilt University, Nashville, TN, USA  \hfill \\%{Supervisor: Peng Wang}\\
-%Topic:  Registration for Correlative Microscopy using Image Analogies \vspace{.05in}
-
-
- 
-\section{\sc Honors \& Awards}
-%\smallskip
-
-%{\renewcommand\baselinestretch{1.1}\selectfont
-ISBI 2015 NIH Traval Award. \hfill      2015\\
-Guanghua Scholarship.  \hfill       2010\\
-Outstanding graduate Student Award, Sichuan University. \hfill       2010\\
-Graduate Student Fellowship, Sichuan University.  \hfill       2007-2010\\
-%Excellent graduate for Undergraduate Students, Sichuan University.  \hfill       2007\\
-Student Innovation Award, Sichuan University.  \hfill        2005-2007 \\%\vspace{.1in}\\
-1st prize of China Undergraduate Mathematical Contest in Modeling.  \hfill       2006
-
-
-
-%\par}
-\end{resume}
-
-%\bibliography{ref}
-%\bibliographystyle{plain}
+		\hfill\hfill\hfill
+		{
+			\begin{minipage}[b]{2in}
+				\flushleft %\footnotesize 
+				303 Smith Level Rd \\
+				APT C23 \\ 
+				Chapel Hill, NC~~27516
+			\end{minipage}
+			\hfill
+			\begin{minipage}[b]{1.8in}
+				\flushright %\footnotesize 
+				(919) 699-9542 \, \faPhone \\ 
+				\texttt{\href{mailto:tiancao@cs.unc.edu}{tiancao@cs.unc.edu}}\, \faEnvelope \\
+				\texttt{\href{http://tiancao.me/}{tiancao.me}}\, \faGlobe 
+			\end{minipage}
+		}\par
+		%\hrulefill
+	\end{adjustwidth}  
+	
+	%\name{\huge{\sc Tian Cao} \vspace*{.1in}}
+	% \address used twice to have two lines of address
+	%\address{1985  Storm Lane, Troy, NY 12180}
+	%\address{(518) 273-0014 or (518) 272-6666}
+	
+	\begin{resume}
+		%\section{\sc{Contact Information}}
+		%\smallskip
+		%%\begin{tabular}{@{}p{3in}p{3in}}
+		%%\begin{tabular}{@{} l r}
+		%%\begin{tabular}{@{}p{3in} r}
+		%Department of Computer Science  \hfill { Mobile:}  (+1) 919-699-9542 \\
+		%%Campus Box 3175, Sitterson Hall  \hfill { Office phone:} (+1) 919-843-7425 \\      
+		%UNC-Chapel Hill \hfill { Email:}  tiancao@cs.unc.edu \\
+		%Chapel Hill, NC 27599-3175 USA \hfill  \url{http://tiancao.me/} 
+		%%\end{tabular}
+		
+		%\section{\sc{Objective}}       
+		%\smallskip
+		%Full-time R\&D position
+		%Full-time software engineer position
+		%\vspace{-.05in}
+		
+		%\section{\sc{Interests}}       
+		%\smallskip
+		
+		%\\
+		%Deep Learning, Dictionary Learning, Image Classification
+		
+		
+		\section{\sc Education}
+		\smallskip
+		
+		\textsc{\textbf{University of North Carolina at Chapel Hill}}, Chapel Hill, NC \hfill{05/2016}\\
+		\vspace*{-.15in}
+		\begin{list1}
+			\item[] Ph.D. candidate in Computer Science %\hfill{GPA: 3.75/4.0}
+			%\item[] Dissertation title: Coupled Dictionary Learning for Image Analysis
+		\end{list1}
+		% \smallskip
+		\vspace*{-.15in}
+		\textsc{\textbf{Sichuan University}}, Chengdu, Sichuan, China \hfill {06/2010} \\
+		\vspace*{-.15in}
+		\begin{list1}
+			\item[] M.S. in Computer Science  %\hfill {GPA: 3.7/4.0}
+		\end{list1}
+		%\smallskip
+		\vspace*{-.15in}
+		\textsc{\textbf{Sichuan University}}, Chengdu, Sichuan, China \hfill{05/2007}\\
+		\vspace*{-.15in}
+		\begin{list1}
+			\item[] B.E. in Computer Science  %\hfill {GPA: 3.6/4.0}
+		\end{list1}
+		
+		\section{\sc Skills}
+		\smallskip
+		
+		Programming: C/C++, Java, Matlab, Python, SQL, SPARK, Bash, CUDA, OPENCV\\
+		Machine Learning: Dictionary Learning, Deep Learning, Regression and Classification\\
+		Image Processing: Registration, Segmentation, Denoising\\
+		Computer Vision: Feature extraction, object detection, tracking
+		
+		
+		\vspace{-.05in}
+		\section{\sc Experience}
+		\smallskip
+		
+		\textbf{Intern, IBM Almaden Research Center}, San Jose, CA \hfill      05/2014-08/2014 \\
+		Multi-atlas based Image Segmentation
+		\begin{bullets} 
+			\item Implemented multi-atlas based image segmentation system in Java;
+			\item Investigated methods of learning from ambiguous labels using matlab and Java;
+			\item Investigated atlas based image segmentation methods with different local features and classifiers.
+		\end{bullets}
+		\vspace{-.3in}
+		
+		\textbf{Intern, Siemens Corporate Research}, Princeton, NJ \hfill      05/2012-08/2012 \\
+		%  \hfill {Supervisor: Peng Wang}\\
+		Real-time Object Detection in Ultrasound Videos
+		\begin{bullets} 
+			\item Developed and implemented a needle detection system for ultrasound videos in C++ and MFC;
+			\item Incorporated with different features and hough transform to vote the needle segment;
+			\item Implemented a 3D steerable filtering method to incorporate spatial and temporal information for needle detection.
+		\end{bullets}
+		\vspace{-.1in}
+		
+		\textbf{Research Project, UNC Chapel Hill}, Chapel Hill, NC  \hfill      09/2014-01/2015 \\
+		Image Annotation using Deep Representations %\hfill {Advisor: Marc Niethammer}
+		\begin{bullets}
+			\item Developed automatic image annotation with Convolutional Neural Network(CNN) features;
+			\item Jointly modeling the image features and word features and tested on multiple dataset;
+			\item Implemented in matlab, C++ and Caffe.
+		\end{bullets}
+		\vspace{-.1in}
+		
+		\textbf{Research Assistant, UNC Chapel Hill}, Chapel Hill, NC  \hfill      09/2010-present \\
+		Coupled Dictionary Learning for Image Analysis %\hfill {Advisor: Marc Niethammer}
+		\begin{bullets}
+			\item Developed coupled dictionary learning methods for image analysis;
+			\item Learning coupled dictionaries based on sparse coding, and applied the learned dictionary to multi-modal image analysis problems;
+			\item Implemented in matlab and C++.
+		\end{bullets}
+		\vspace{-.1in}
+		
+		
+		\textbf{Research Assistant, Chinese Academy of Sciences}, Shenzhen, China   \hfill      09/2009-03/2010 \\ %\hfill {Advisor: Yangsheng Xu}\\
+		Energy based Crowd Motion Analysis
+		\begin{bullets}
+			\item Implemented a abnormal crowd motion analysis system in C++ and OPENCV;
+			\item Developed an energy based crowd motion analysis algorithm based on mutual information;
+			\item Applied the algorithm to detect the crowd abnormal behaviors.
+		\end{bullets}
+		\vspace{-.1in}
+		
+		%\smallskip 
+		%\textbf{Research Assistant, Sichuan University}, Chengdu, China \hfill      01/2008-09/2009 \\%\hfill {Advisor: Dong C. Liu}\\
+		%Super-resolution for Ultrasound Speckle Reduction
+		%\begin{bullets}
+		%\item Developed a fast and robust super-resolution method for intima reconstruction in
+		%ultrasound;
+		%\item Applied anisotropic diffusion to reduce speckle with edge enhancement in image reconstruction;
+		%\item Implemented anisotropic diffusion method in C++ and GLSL.
+		%\end{bullets} %\vspace{.05in} %\smallskip 
+		%\vspace{-.1in}
+		
+		
+		\section{\sc Selected Publications}  
+		\smallskip
+		$[1]$.\textbf{Tian Cao}, Nikhil Singh, Vladimir Jojic, Marc Niethammer, ``Semi-coupled Dictionary Learning for Deformation Prediction'', \emph{International Symposium on Biomedical Imaging} (\textbf{ISBI}), 2015. \vspace{.05in}\\
+		$[2]$.\textbf{Tian Cao}, Christopher Zach, Marc Niethammer et al., ``Multi-modal Registration for Correlative Microscopy using Image Analogies'', \emph{Medical Image Analysis} (\textbf{MedIA}), Elsevier, 2014. \vspace{.05in}\\
+		$[3]$.\textbf{Tian Cao}, Vladimir Jojic, Marc Niethammer et al., ``Robust Multimodal Dictionary Learning'', \emph{The 16th International Conference on Medical Image Computing and Computer Assisted Intervention} (\textbf{MICCAI}), 2013. \vspace{.05in}\\
+		$[4]$.Bo Wang, \textbf{Tian Cao}, Yuguo Dai, Dong C. Liu, ``Ultrasound Speckle Reduction via Super Resolution and Nonlinear Diffusion'',  \emph{the 9th Asian Conference on Computer Vision} (\textbf{ACCV}), 2009. \vspace{.05in}\\
+		%\smallskip
+		$[5]$.\textbf{Tian Cao}, Bo Wang, Dong C. Liu, ``Optimized GPU Framework of Semi-implicit AOS
+		Scheme Based Speckle Reducing Nonlinear Diffusion'',  \emph{proceedings of SPIE Medical Imaging} (\textbf{SPIE MI}), 2009.\vspace{.05in}\\%\smallskip  
+		%\smallskip
+		$[6]$.\textbf{Tian Cao}, Xinyu Wu, Jinnian Guo, Shiqi Yu, Yangsheng Xu, ``Abnormal Crowd Motion Analysis'', \emph{IEEE International Conference on Robotics and Biomimetics} (\textbf{ROBIO}), 2009.
+		
+		%\section{\sc Conference Talk} 
+		%\smallskip
+		%
+		%\textbf{Workshop on Biomedical Image Registration} \hfill      07/2012 \\
+		%Vanderbilt University, Nashville, TN, USA  \hfill \\%{Supervisor: Peng Wang}\\
+		%Topic:  Registration for Correlative Microscopy using Image Analogies \vspace{.05in}
+		
+		
+		
+		\section{\sc Honors \& \\Awards}
+		%\smallskip
+		
+		%{\renewcommand\baselinestretch{1.1}\selectfont
+		HackNC 2015 Best UI Award.   \hfill            2015\\
+		ISBI 2015 NIH Traval Award. \hfill      2015\\
+		Guanghua Scholarship.  \hfill       2010\\
+		Outstanding graduate Student Award, Sichuan University. \hfill       2010\\
+		Graduate Student Fellowship, Sichuan University.  \hfill       2007-2010\\
+		%Excellent graduate for Undergraduate Students, Sichuan University.  \hfill       2007\\
+		Student Innovation Award, Sichuan University.  \hfill        2005-2007 \\%\vspace{.1in}\\
+		1st prize of China Undergraduate Mathematical Contest in Modeling.  \hfill       2006
+		
+		
+		
+		%\par}
+	\end{resume}
+	
+	%\bibliography{ref}
+	%\bibliographystyle{plain}
 \end{document}
 
 
